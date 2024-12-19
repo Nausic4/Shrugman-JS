@@ -42,3 +42,10 @@ function repeat() {
   }
 }
 //-------------------------
+
+//Storing a list of the games done:
+const gameScoreArray = [];
+let gameScore = "";
+//-------------------------
+
+console.log(game());
