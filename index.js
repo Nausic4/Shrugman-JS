@@ -25,3 +25,20 @@ const anime = [
   "Death Note",
 ];
 //-------------------------
+
+//Function for repeating the game :
+function repeat() {
+  let rep = prompt(
+    "Do you want to continue? Type (y) for yes. Type (n) for no. "
+  );
+  if (rep.toLowerCase() === "y") {
+    return game();
+  } else if (rep.toLowerCase() === "n") {
+    console.clear();
+    return "Goodbye!";
+  } else {
+    console.log("You typed an invalid character!");
+    return repeat();
+  }
+}
+//-------------------------
